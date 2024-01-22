@@ -1,0 +1,242 @@
+[
+    {
+      "number": 1,
+      "question": "What feelings are hard for you to communicate to me? How can I make it easier?",
+      "translation": "¿Qué sentimientos te resultan difíciles de comunicarme? ¿Cómo puedo facilitarlo?"
+    },
+    {
+      "number": 2,
+      "question": "What’s the most attractive thing I do without realizing it?",
+      "translation": "¿Cuál es lo más atractivo que hago sin darme cuenta?"
+    },
+    {
+      "number": 3,
+      "question": "What’s one small way I can be a better partner?",
+      "translation": "¿Cuál es una pequeña manera en la que puedo ser un mejor compañero?"
+    },
+    {
+      "number": 4,
+      "question": "What’s the most romantic thing I’ve done recently?",
+      "translation": "¿Cuál es lo más romántico que he hecho recientemente?"
+    },
+    {
+      "number": 5,
+      "question": "What has this relationship taught you about yourself?",
+      "translation": "¿Qué te ha enseñado esta relación sobre ti mismo?",
+      "response": true
+    },
+    {
+      "number": 6,
+      "question": "How does one earn your trust? Have I earned it? How can I earn more?",
+      "translation": "¿Cómo se gana tu confianza? ¿La he ganado? ¿Cómo puedo ganar más?"
+    },
+    {
+      "number": 7,
+      "question": "WILDCARD: Write down your intention for our relationship. Compare.",
+      "translation": "COMODÍN: Escribe tu intención para nuestra relación. Compara."
+    },
+    {
+      "number": 8,
+      "question": "Thank you for helping me realize ___ About myself.",
+      "translation": "Gracias por ayudarme a darme cuenta de ___ sobre mí mismo."
+    },
+    {
+      "number": 9,
+      "question": "What did this conversation teach you about our relationship? Did it teach you about yourself?",
+      "translation": "¿Qué te enseñó esta conversación sobre nuestra relación? ¿Te enseñó algo sobre ti mismo?"
+    },
+    {
+      "number": 10,
+      "question": "Is there anything you still don’t know about me that you wish you did?",
+      "translation": "¿Hay algo que aún no sepas de mí y que desearías saber?"
+    },
+    {
+      "number": 11,
+      "question": "What don’t I give myself enough credit for?",
+      "translation": "¿Por qué no me doy el crédito suficiente?"
+    },
+    {
+      "number": 12,
+      "question": "WILDCARD: Write down the title you would give this chapter of our relationship. Compare.",
+      "translation": "COMODÍN: Escribe el título que le darías a este capítulo de nuestra relación. Compara."
+    },
+    {
+      "number": 13,
+      "question": "How do our strengths and weaknesses complement each other?",
+      "translation": "¿Cómo se complementan nuestras fortalezas y debilidades?"
+    },
+    {
+      "number": 14,
+      "question": "What recent experience made you feel closer to me?",
+      "translation": "¿Qué experiencia reciente te hizo sentir más cerca de mí?"
+    },
+    {
+      "number": 15,
+      "question": "WILDCARD: Write a love song for your partner. 1 minute. Perform for each other.",
+      "translation": "COMODÍN: Escribe una canción de amor para tu pareja. 1 minuto. Realízala para el otro."
+    },
+    {
+      "number": 16,
+      "question": "What do you wish we did more of?",
+      "translation": "¿Qué desearías que hiciéramos más juntos?"
+    },
+    {
+      "number": 17,
+      "question": "What about you feels hardest to love?",
+      "translation": "¿Qué aspecto tuyo resulta más difícil de amar?",
+      "response": true
+    },
+    {
+      "number": 18,
+      "question": "What’s the most important lesson a past relationship has taught you?",
+      "translation": "¿Cuál es la lección más importante que te ha enseñado una relación pasada?"
+    },
+    {
+      "number": 19,
+      "question": "What made you fall in love with me?",
+      "translation": "¿Qué te hizo enamorarte de mí?"
+    },
+    {
+      "number": 20,
+      "question": "Are there any insecurities from relationships that you carried into this one? What are they?",
+      "translation": "¿Hay inseguridades de relaciones pasadas que llevaste a esta? ¿Cuáles son?"
+    },
+    {
+      "number": 21,
+      "question": "Finish the sentence: Thank you for accepting ___.",
+      "translation": "Completa la frase: Gracias por aceptar ___."
+    },
+    {
+      "number": 22,
+      "question": "What have you been extra sensitive to lately?",
+      "translation": "¿A qué has sido especialmente sensible últimamente?"
+    },
+    {
+      "number": 23,
+      "question": "What song describes our relationship?",
+      "translation": "¿Qué canción describe nuestra relación?"
+    },
+    {
+      "number": 24,
+      "question": "What have I helped you appreciate about yourself?",
+      "translation": "¿Qué te he ayudado a apreciar de ti mismo?"
+    },
+    {
+      "number": 25,
+      "question": "Write a short guide on how to love your partner well. 30 Seconds. Compare.",
+      "translation": "Escribe una guía breve sobre cómo amar bien a tu pareja. 30 segundos. Compara."
+    },
+    {
+      "number": 26,
+      "question": "On a scale of 1-10 how open do you feel I am with you? Explain.",
+      "translation": "En una escala del 1 al 10, ¿cuán abierto sientes que soy contigo? Explícalo."
+    },
+    {
+      "number": 27,
+      "question": "What assumptions did you make about me that turned out to be false?",
+      "translation": "¿Qué suposiciones hiciste sobre mí que resultaron ser falsas?",
+      "response": true
+    },
+    {
+      "number": 28,
+      "question": "What was the first thing you noticed about me?",
+      "translation": "¿Qué fue lo primero que notaste de mí?"
+    },
+    {
+      "number": 29,
+      "question": "What do you think my perfect date night would be?",
+      "translation": "¿Cuál crees que sería mi noche de cita perfecta?"
+    },
+    {
+      "number": 30,
+      "question": "Who do you think was more nervous on our first date? Explain.",
+      "translation": "¿Quién crees que estaba más nervioso en nuestra primera cita? Explícalo."
+    },
+    {
+      "number": 31,
+      "question": "How important do you think birthdays and holidays are to me? Explain.",
+      "translation": "¿Cuán importantes crees que son los cumpleaños y las festividades para mí? Explícalo."
+    },
+    {
+      "number": 32,
+      "question": "What goal would feel best for you to accomplish this year? How can I support you in that?",
+      "translation": "¿Qué objetivo sería el mejor para ti lograr este año? ¿Cómo puedo apoyarte en eso?",
+      "response": true
+    },
+    {
+      "number": 33,
+      "question": "The hardest thing for me to reveal about myself to you was ___.",
+      "translation": "Lo más difícil para mí de revelar sobre mí mismo fue ___."
+    },
+    {
+      "number": 34,
+      "question": "What fear do you think holds me back the most?",
+      "translation": "¿Qué miedo crees que me detiene más?"
+    },
+    {
+      "number": 35,
+      "question": "WILDCARD: Ask your partner something you’ve never asked them before.",
+      "translation": "COMODÍN: Pregúntale a tu pareja algo que nunca le hayas preguntado antes."
+    },
+    {
+      "number": 36,
+      "question": "What answer of mine surprised you the most throughout this game? If any.",
+      "translation": "¿Qué respuesta mía te sorprendió más durante este juego? Si alguna."
+    },
+    {
+      "number": 37,
+      "question": "WILDCARD: Write down one small way you can be better in this relationship. Both players. Compare.",
+      "translation": "COMODÍN: Anota una pequeña manera en la que puedas ser mejor en esta relación. Ambos jugadores. Compara."
+    },
+    {
+      "number": 38,
+      "question": "What did our worst argument teach you?",
+      "translation": "¿Qué te enseñó nuestra peor discusión?"
+    },
+    {
+      "number": 39,
+      "question": "What are you currently working through that I don’t see, if anything?",
+      "translation": "¿En qué estás trabajando actualmente que yo no veo, si es que hay algo?"
+    },
+    {
+      "number": 40,
+      "question": "Have I helped you change your mind about anything?",
+      "translation": "¿Te he ayudado a cambiar de opinión sobre algo?",
+      "response": true
+    },
+    {
+      "number": 41,
+      "question": "How have you seen me grow in this relationship?",
+      "translation": "¿Cómo me has visto crecer en esta relación?"
+    },
+    {
+      "number": 42,
+      "question": "When was the last time I hurt you, intentionally or unintentionally?",
+      "translation": "¿Cuándo fue la última vez que te lastimé, intencional o accidentalmente?"
+    },
+    {
+      "number": 43,
+      "question": "How do I show you that I love you without telling you?",
+      "translation": "¿Cómo te demuestro que te amo sin decírtelo?"
+    },
+    {
+      "number": 44,
+      "question": "WILDCARD: Write down the top 3 things you’re most grateful for in your partner. 30 seconds. Compare.",
+      "translation": "COMODÍN: Escribe las 3 cosas principales por las que estás más agradecido en tu pareja. 30 segundos. Compara."
+    },
+    {
+      "number": 45,
+      "question": "What immediately attracted you to me? What attracted you more over time?",
+      "translation": "¿Qué te atrajo de inmediato de mí? ¿Qué te atrajo más con el tiempo?"
+    },
+    {
+      "number": 46,
+      "question": "Write down the top 3 things your partner does that make you feel most loved. Both players. Compare.",
+      "translation": "Escribe las 3 cosas principales que hace tu pareja y que te hacen sentir más amado. Ambos jugadores. Compara."
+    },
+    {
+      "number": 47,
+      "question": "WILDCARD: On a scale of 1-10, write down how important having kids is to you. Compare and explain.",
+      "translation": "COMODÍN: En una escala del 1 al 10, anota cuán importante es para ti tener hijos. Compara y explica."
+    }
+  ]
