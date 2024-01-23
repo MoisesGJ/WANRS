@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Card from './Card';
 
-import ArrowR from '../public/arrow_rigth.svg';
-import Random from '../public/random.svg';
-import ArrowL from '../public/arrow_left.svg';
+import ArrowR from '/arrow_rigth.svg';
+import Random from '/random.svg';
+import ArrowL from '/arrow_left.svg';
 
 function App() {
   const [text, setText] = useState([]);
@@ -111,7 +111,10 @@ function App() {
           src="#"
           onClick={left}
         >
-          <img src={ArrowL} />
+          <img
+            src={ArrowL}
+            className="hover:bg-gray-100 rounded-full"
+          />
         </button>
 
         <button
@@ -121,6 +124,7 @@ function App() {
           <img
             src={Random}
             alt=""
+            className="hover:bg-gray-100 rounded-full"
           />
         </button>
 
@@ -128,7 +132,10 @@ function App() {
           src="#"
           onClick={right}
         >
-          <img src={ArrowR} />
+          <img
+            src={ArrowR}
+            className="hover:bg-gray-100 rounded-full"
+          />
         </button>
       </div>
     </>
