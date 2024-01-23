@@ -3,6 +3,7 @@ import './App.css';
 import Card from './Card';
 
 import ArrowR from '../public/arrow_rigth.svg';
+import Random from '../public/random.svg';
 import ArrowL from '../public/arrow_left.svg';
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
   const [data, setData] = useState({});
 
   useEffect(() => {
-    fetch('data.json')
+    fetch(
+      'https://wanrs-876f7-default-rtdb.firebaseio.com/Game/-Noo8r4HWp337ncONOTL/.json'
+    )
       .then((resData) => resData.json())
       .then((res) => {
         setData(res);
@@ -29,7 +32,7 @@ function App() {
           ))
         );
       });
-  }, []);
+  }, [data]);
 
   const right = () => {
     setCount(count + 1);
@@ -49,25 +52,26 @@ function App() {
     setCount(Math.floor(Math.random() * text.length));
   };
 
-  function modificarDatos() {
-    console.log(count + 1);
-    data[count].response = true;
+  function modificarDatos(rmv) {
+    rmv ? (data[count].response = true) : (data[count].response = false);
 
     setData({ ...data });
     guardarDatosEnArchivo();
   }
 
   function guardarDatosEnArchivo() {
-    console.log('hola');
     const jsonData = JSON.stringify(data, null, 2);
 
-    fetch('data.json', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: jsonData,
-    })
+    fetch(
+      'https://wanrs-876f7-default-rtdb.firebaseio.com/Game/-Noo8r4HWp337ncONOTL/.json',
+      {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: jsonData,
+      }
+    )
       .then((response) => {
         if (!response.ok) {
           throw new Error('Error al guardar el archivo JSON');
@@ -81,14 +85,18 @@ function App() {
   return (
     <>
       <main className="p-4 px-5">
+        {output}
+
         <button
           src="#"
-          onClick={random}
-          className="font-bold text-[16px]  hover:text-[#105b8c] absolute -top-16 italic"
+          className="absolute start-10 top-8 font-bold z-[100] text-transparent"
+          onClick={() => {
+            modificarDatos(false);
+          }}
+          style={{ width: '10px' }}
         >
-          <u>Random</u>
+          .
         </button>
-        {output}
 
         <button
           className="absolute bottom-[15px] font-semibold text-sm lg:text-md"
@@ -108,15 +116,21 @@ function App() {
 
         <button
           src="#"
+          onClick={random}
+        >
+          <img
+            src={Random}
+            alt=""
+          />
+        </button>
+
+        <button
+          src="#"
           onClick={right}
         >
           <img src={ArrowR} />
         </button>
       </div>
-
-      {/* <footer className="absolute  left-1/2 transform -translate-x-1/2 top-10 text-[10px]">
-        Powered by <b>Moi6cito</b>
-      </footer> */}
     </>
   );
 }
