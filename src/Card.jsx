@@ -40,7 +40,7 @@ function Card({ number, question, translation, response }) {
 
       {response ? (
         <>
-          <p className="text-[#f0f2f3] font-bold text-[5vw] md:text-[4vw] lg:text-4xl blur-[1px]">
+          <p className="text-[#f0f2f3] font-bold text-[5vw] md:text-[4vw] lg:text-4xl">
             {text.split(' ').map((word, pos) => (
               <span
                 key={pos}
@@ -62,7 +62,7 @@ function Card({ number, question, translation, response }) {
         </button>
       )}
 
-      <span className={`${response && " blur-[1px]"} absolute top-[30px] font-bold text-sm`}>{number}</span>
+      <span className="absolute top-[30px] font-bold text-sm">{number}</span>
     </React.Fragment>
   );
 }
