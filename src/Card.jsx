@@ -62,7 +62,7 @@ function Card({ number, question, translation, response }) {
         </button>
       )}
 
-      <span className="absolute top-[30px] font-bold text-sm">{response ? <span className="blur-[1px]">number</span> : number}</span>}
+      <span className={`${response && " blur-[1px]"} absolute top-[30px] font-bold text-sm`}>number</span>
     </React.Fragment>
   );
 }
