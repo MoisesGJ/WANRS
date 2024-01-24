@@ -28,7 +28,7 @@ function Card({ number, question, translation, response }) {
         <>
           <button
             src="#"
-            className="absolute end-1 -top-2 font-bold z-[100] text-xl"
+            className="absolute end-0 -top-2 font-bold z-[100] text-xl"
             onClick={() => {
               modificarDatos(false);
             }}
