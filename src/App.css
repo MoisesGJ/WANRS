@@ -24,3 +24,18 @@ main {
 
   text-align: center;
 }
+
+.pruebaaa {
+  position: relative;
+  display: inline-block;
+}
+
+.pruebaaa::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #c10016;
+}

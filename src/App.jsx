@@ -89,13 +89,13 @@ function App() {
 
         <button
           src="#"
-          className="absolute start-10 top-8 font-bold z-[100] text-transparent"
+          className="absolute -end-2 -top-4 font-bold z-[100] text-transparent p-3 px-4"
           onClick={() => {
             modificarDatos(false);
           }}
           style={{ width: '10px' }}
         >
-          .
+          ....
         </button>
 
         <button
