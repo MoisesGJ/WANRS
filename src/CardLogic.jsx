@@ -5,6 +5,7 @@ function CardLogic({ currentApi, switchApi }) {
   const [cardData, setCardData] = useState([]);
   const [count, setCount] = useState(0);
   const [updateResponse, setUpdateResponse] = useState(false);
+  const [anima, setAnima] = useState('');
 
   useEffect(() => {
     fetch(currentApi + '.json')
@@ -45,17 +46,38 @@ function CardLogic({ currentApi, switchApi }) {
   const output = cardData[count];
 
   const handleLeftArrow = () => {
-    setCount(
-      (prevCount) => (prevCount - 1 + cardData.length) % cardData.length
-    );
+    setAnima('-translate-x-5 transition-opacity opacity-0');
+
+    const timer = setTimeout(() => {
+      setCount(
+        (prevCount) => (prevCount - 1 + cardData.length) % cardData.length
+      );
+      setAnima('translate-x-5 transition-opacity opacity-100');
+    }, 600);
+
+    return () => clearTimeout(timer);
   };
 
   const handleRigthArrow = () => {
-    setCount((prevCount) => (prevCount + 1) % cardData.length);
+    setAnima('translate-x-5 transition-opacity opacity-0');
+
+    const timer = setTimeout(() => {
+      setCount((prevCount) => (prevCount + 1) % cardData.length);
+      setAnima('-translate-x-5 transition-opacity opacity-100');
+    }, 600);
+
+    return () => clearTimeout(timer);
   };
 
   const handleRandomBtn = () => {
-    setCount(Math.floor(Math.random() * cardData.length));
+    setAnima('rotate-180 transition-opacity');
+
+    const timer = setTimeout(() => {
+      setCount(Math.floor(Math.random() * cardData.length));
+      setAnima('rotate-0 transition-opacity');
+    }, 500);
+
+    return () => clearTimeout(timer);
   };
 
   return {
@@ -65,6 +87,7 @@ function CardLogic({ currentApi, switchApi }) {
     handleRandomBtn,
     switchApi,
     handleEditData,
+    anima,
   };
 }
 

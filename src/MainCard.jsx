@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import CardLogic from './CardLogic';
+import Modal from './Components/Modal';
 import './MainCard.css';
 
 export default function MainCard() {
@@ -12,6 +13,7 @@ export default function MainCard() {
   const currentApi = apiEndpoints[currentApiIndex];
   const [currentColor, setCurrentColor] = useState('#1c1c1c');
   const [hoverColor, setHoverColor] = useState('bg-red-50');
+  const [modalOpen, setModalOpen] = useState(false);
 
   const {
     output,
@@ -20,6 +22,7 @@ export default function MainCard() {
     handleRandomBtn,
     switchApi,
     handleEditData,
+    anima,
   } = CardLogic({
     currentApi,
     switchApi: () => {
@@ -28,6 +31,11 @@ export default function MainCard() {
   });
 
   useEffect(() => {
+    setModalOpen(true);
+    const timer = setTimeout(() => {
+      setModalOpen(false);
+    }, 2000);
+
     document.body.classList.toggle('bg-white', currentApiIndex === 0);
     document.body.classList.toggle('bg-gray-950', currentApiIndex === 1);
 
@@ -38,10 +46,20 @@ export default function MainCard() {
       setCurrentColor('#f0f2f3');
       setHoverColor('hover:bg-[#950f1e]');
     }
+    return () => clearTimeout(timer);
   }, [currentApiIndex]);
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
 
   return (
     <>
+      <Modal
+        isOpen={modalOpen}
+        onClose={handleCloseModal}
+        api={currentApiIndex}
+      />
       <button
         className={`absolute top-3 right-3 ${hoverColor} rounded-full p-2`}
         onClick={switchApi}
@@ -59,7 +77,9 @@ export default function MainCard() {
 
       {/* MAIN */}
 
-      <main className="p-4 px-5 shadow-[3.0px_3.0px_3.0px_rgba(0,0,0,0.20)]">
+      <main
+        className={`p-4 px-5 shadow-[3.0px_3.0px_3.0px_rgba(0,0,0,0.20)] transform transition duration-300 ${anima}`}
+      >
         {/* FALSE RESPONSE */}
         <button
           className="z-50 text-transparent p-4 absolute -top-6 -end-4"

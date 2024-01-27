@@ -22,7 +22,7 @@ export default function Text({
       {response && (
         <span
           src="#"
-          className="z-0 absolute -end-1 -top-2 font-bold z-[100] text-x"
+          className="absolute -end-1 -top-2 font-bold z-10 text-x"
         >
           x
         </span>
