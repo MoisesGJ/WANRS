@@ -46,35 +46,35 @@ function CardLogic({ currentApi, switchApi }) {
   const output = cardData[count];
 
   const handleLeftArrow = () => {
-    setAnima('-translate-x-5 transition-opacity opacity-0');
+    setAnima('-rotate-90 -translate-x-full scale-150');
 
     const timer = setTimeout(() => {
       setCount(
         (prevCount) => (prevCount - 1 + cardData.length) % cardData.length
       );
-      setAnima('translate-x-5 transition-opacity opacity-100');
+      setAnima('');
     }, 600);
 
     return () => clearTimeout(timer);
   };
 
   const handleRigthArrow = () => {
-    setAnima('translate-x-5 transition-opacity opacity-0');
+    setAnima('rotate-90 translate-x-full scale-150');
 
     const timer = setTimeout(() => {
       setCount((prevCount) => (prevCount + 1) % cardData.length);
-      setAnima('-translate-x-5 transition-opacity opacity-100');
+      setAnima('');
     }, 600);
 
     return () => clearTimeout(timer);
   };
 
   const handleRandomBtn = () => {
-    setAnima('rotate-180 transition-opacity');
+    setAnima('skew-y-12 scale-75');
 
     const timer = setTimeout(() => {
       setCount(Math.floor(Math.random() * cardData.length));
-      setAnima('rotate-0 transition-opacity');
+      setAnima('skew-y-0');
     }, 500);
 
     return () => clearTimeout(timer);

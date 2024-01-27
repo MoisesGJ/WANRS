@@ -6,18 +6,22 @@ export default function Modal({ isOpen, onClose, api }) {
 
   const [displayText, setDisplayText] = useState('');
   const text = 'XXX';
+  const [header, setHeader] = useState('');
 
   useEffect(() => {
-    let currentIndex = 0;
-    const interval = setInterval(() => {
-      if (currentIndex <= text.length) {
-        setDisplayText(text.slice(0, currentIndex));
-        currentIndex++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 175);
-    return () => clearInterval(interval);
+    setTimeout(() => {
+      setHeader(`WE'RE NOT REALLY STRANGERS`);
+      let currentIndex = 0;
+      const interval = setInterval(() => {
+        if (currentIndex <= text.length) {
+          setDisplayText(text.slice(0, currentIndex));
+          currentIndex++;
+        } else {
+          clearInterval(interval);
+        }
+      }, 175);
+      return () => clearInterval(interval);
+    }, 500);
   }, []);
 
   return ReactDOM.createPortal(
@@ -26,7 +30,7 @@ export default function Modal({ isOpen, onClose, api }) {
         api == 0 ? 'bg-[#f0f2f3]' : 'bg-[#1c1c1c]'
       } font-bold text-[5vw] md:text-[4vw] lg:text-4xl`}
     >
-      <h1>WE'RE NOT REALLY STRANGERS</h1>
+      <h1>{header}</h1>
       {api == 1 && <p>{displayText}</p>}
     </div>,
     document.getElementById('modal-root')
